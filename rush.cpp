@@ -15,6 +15,9 @@ void show() {
     system("cat /home/jake/.rushnote.txt");
 }
 
+void edit() {
+    system("$EDITOR /home/jake/.rushnote.txt");
+}
 
 int main(int argc, char* argv[]) {
 
@@ -25,10 +28,12 @@ int main(int argc, char* argv[]) {
         const char* arg2 = argv[2];
         const char* inputFlag = arg2;
         add(inputFlag); 
-    }
-
-    if (firstFlag == "-s") {
+    
+    } else if (firstFlag == "-s") {
         show();
+    
+    } else if (firstFlag == "-e") {
+	edit();
     }
 
     return 0;
