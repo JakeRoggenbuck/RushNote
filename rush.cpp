@@ -4,8 +4,8 @@
 using namespace std;
 
 void add(const char* input) {
-    ofstream myfile;
-    myfile.open ("$HOME/.rushnote.txt",ios::app);
+	ofstream myfile;
+    myfile.open ("/home/jake/.rushnote.txt",ios::app);
     string output = input;
     myfile << "[ ] " + output + "\n";
     myfile.close();
