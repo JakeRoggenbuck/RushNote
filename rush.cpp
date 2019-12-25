@@ -5,18 +5,18 @@ using namespace std;
 
 void add(const char* input) {
     ofstream myfile;
-    myfile.open ("/home/jake/.rushnote.txt",ios::app);
+    myfile.open ("$HOME/.rushnote.txt",ios::app);
     string output = input;
     myfile << "[ ] " + output + "\n";
     myfile.close();
 }
 
 void show() {
-    system("cat /home/jake/.rushnote.txt");
+    system("cat $HOME/.rushnote.txt");
 }
 
 void edit() {
-    system("$EDITOR /home/jake/.rushnote.txt");
+    system("$EDITOR $HOME/.rushnote.txt");
 }
 
 int main(int argc, char* argv[]) {
