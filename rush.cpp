@@ -20,11 +20,10 @@ void edit() {
 }
 
 int main(int argc, char* argv[]) {
+	const char* arg1 = argv[1];
+	string firstFlag = arg1;
 
-    const char* arg1 = argv[1];
-    string firstFlag = arg1;
-
-    if (firstFlag == "-a") {
+	if (firstFlag == "-a") {
         const char* arg2 = argv[2];
         const char* inputFlag = arg2;
         add(inputFlag); 
@@ -33,7 +32,7 @@ int main(int argc, char* argv[]) {
         show();
     
     } else if (firstFlag == "-e") {
-	edit();
+		edit();
     }
 
     return 0;
