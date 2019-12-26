@@ -6,6 +6,5 @@ make: rush.cpp
 install:
 	cp rushnote.1 /usr/share/man/man1/rushnote.1
 	gzip /usr/share/man/man1/rushnote.1
-
-path:
-	echo "RushNote save file" > ~/.rushnote.txt
+	echo "RushNote save file" > /usr/share/rushnote/rushnote.txt
+	chmod 770 /usr/share/rushnote/rushnote.txt
