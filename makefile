@@ -8,5 +8,5 @@ install:
 	gzip /usr/share/man/man1/rushnote.1
 	mkdir /usr/share/rushnote
 	echo "RushNote save file" > /usr/share/rushnote/rushnote.txt
-	chmod 770 /usr/share/rushnote/rushnote.txt
+	chmod 777 /usr/share/rushnote/rushnote.txt
 
