@@ -10,3 +10,9 @@ install:
 	touch /usr/share/rushnote/rushnote.txt
 	chmod 777 /usr/share/rushnote/rushnote.txt
 
+clean:
+	rm /usr/share/man/man1/rushnote.1.gz
+	rm -rf /usr/share/rushnote
+
+uninstall:
+	rm -rf /bin/rushnote
