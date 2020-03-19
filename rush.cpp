@@ -11,13 +11,16 @@ void add(const char* input) {
     myfile.close();
 }
 
+
 void show() {
     system("cat /usr/share/rushnote/rushnote.txt");
 }
 
+
 void edit() {
     system("$EDITOR /usr/share/rushnote/rushnote.txt");
 }
+
 
 int main(int argc, char* argv[]) {
     const char* arg1 = argv[1];
